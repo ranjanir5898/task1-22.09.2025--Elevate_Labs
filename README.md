@@ -11,14 +11,37 @@ This repository contains the **Medical Appointment No-Shows Dataset** from Kaggl
 
 ---
 
+### Dataset Summary
+
+- **Number of rows:** ~110,000 (appointments)  
+- **Number of columns:** 14  
+- **Key columns:**
+  - `patient_id` – Unique identifier for each patient  
+  - `gender` – Patient gender (`Male` / `Female`)  
+  - `scheduled_date` – Date when the appointment was scheduled  
+  - `scheduled_time` – Time when the appointment was scheduled  
+  - `appointment_date` – Date of the appointment  
+  - `age` – Age of the patient  
+  - `no_show` – Indicates if the patient showed up (`Yes` / `No`)  
+  - Other columns: `neighbourhood`, `hipertension`, `diabetes`, `alcoholism`, `handicap`, `sms_received`  
+
+- **Purpose:**  
+  The dataset tracks whether patients showed up for their scheduled medical appointments and includes demographic and medical attributes to analyze trends and predict no-shows.  
+
+---
+
+### Summary
+
+> - Excel was used for **manual/visual cleaning**.
+> - Python was used for **automated and reproducible cleaning**, including handling missing values, duplicates, text standardization, date-time formatting, and exporting the cleaned dataset.
+> - The final cleaned dataset is saved as `cleaned_data.csv` ready for analysis.
+
 ## Data Cleaning and Preprocessing
 
 Data cleaning was performed using **two methods**:
 
-### 1. Microsoft Excel
-
 **Steps performed:**
-
+### 1. Microsoft Excel
 1. **Convert CSV to XLSX** to use Excel tools.  
 2. **Review & Identify Issues:**  
    - Mixed and spaced column names  
@@ -79,7 +102,6 @@ if 'age' in df.columns:
 df.to_csv("cleaned_data.csv", index=False)
 print("Data cleaning completed! Cleaned file saved as 'cleaned_data.csv'")
 
-### Summary
-.Excel was used for manual/visual cleaning.
-.Python was used for automated and reproducible cleaning, handling missing values, duplicates, text standardization, date-time     formatting, and exporting the cleaned dataset.
-.The final cleaned dataset is saved as cleaned_data.csv ready for analysis.
+```python
+
+
