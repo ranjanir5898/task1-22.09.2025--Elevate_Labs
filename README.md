@@ -30,12 +30,6 @@ This repository contains the **Medical Appointment No-Shows Dataset** from Kaggl
 
 ---
 
-### Summary
-
-> - Excel was used for **manual/visual cleaning**.
-> - Python was used for **automated and reproducible cleaning**, including handling missing values, duplicates, text standardization, date-time formatting, and exporting the cleaned dataset.
-> - The final cleaned dataset is saved as `cleaned_data.csv` ready for analysis.
-
 ## Data Cleaning and Preprocessing
 
 Data cleaning was performed using **two methods**:
@@ -101,7 +95,11 @@ if 'age' in df.columns:
 8. **Export Cleaned Data:**
 df.to_csv("cleaned_data.csv", index=False)
 print("Data cleaning completed! Cleaned file saved as 'cleaned_data.csv'")
+```
+---
 
-```python
+### Summary
 
-
+> - Excel was used for **manual/visual cleaning**.
+> - Python was used for **automated and reproducible cleaning**, including handling missing values, duplicates, text standardization, date-time formatting, and exporting the cleaned dataset.
+> - The final cleaned dataset is saved as `cleaned_data.csv` ready for analysis.
